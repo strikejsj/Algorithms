@@ -8,6 +8,6 @@
 func solution(_ phone_number:String) -> String {
     // sufix : 뒤에서 ~자리만 뽑아옴 <-> prefix
     return String(repeating: "*", count: phone_number.count - 4) + phone_number.suffix(4)
-    // 또는 아래와 같이 작성 가능ㅎ
+    // 또는 아래와 같이 작성 가능
     //return String("\(String(repeating: "*", count: phone_number.count - 4))\(phone_number.suffix(4)))")
 }
